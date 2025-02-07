@@ -1,0 +1,137 @@
+[
+    {
+        "model": "application.client",
+        "pk": 1,
+        "fields": {
+            "name": "Alice Dupont",
+            "address": "10 rue des Lilas, Paris"
+        }
+    },
+    {
+        "model": "application.client",
+        "pk": 2,
+        "fields": {
+            "name": "Jean Martin",
+            "address": "24 avenue de la République, Lyon"
+        }
+    },
+    {
+        "model": "application.client",
+        "pk": 3,
+        "fields": {
+            "name": "Sophie Morel",
+            "address": "3 impasse des Roses, Marseille"
+        }
+    },
+    {
+        "model": "application.client",
+        "pk": 4,
+        "fields": {
+            "name": "Marc Lemoine",
+            "address": "5 boulevard Haussmann, Paris"
+        }
+    },
+    {
+        "model": "application.client",
+        "pk": 5,
+        "fields": {
+            "name": "Lucie Bernard",
+            "address": "12 rue du Château, Bordeaux"
+        }
+    },
+    {
+        "model": "application.product",
+        "pk": 1,
+        "fields": {
+            "name": "Chaise",
+            "color": "Bleu",
+            "description": "Chaise confortable en bois."
+        }
+    },
+    {
+        "model": "application.product",
+        "pk": 2,
+        "fields": {
+            "name": "Table",
+            "color": "Brun",
+            "description": "Table en chêne massif."
+        }
+    },
+    {
+        "model": "application.product",
+        "pk": 3,
+        "fields": {
+            "name": "Lampe",
+            "color": "Blanc",
+            "description": "Lampe de bureau LED."
+        }
+    },
+    {
+        "model": "application.product",
+        "pk": 4,
+        "fields": {
+            "name": "Canapé",
+            "color": "Gris",
+            "description": "Canapé 3 places avec coussins."
+        }
+    },
+    {
+        "model": "application.product",
+        "pk": 5,
+        "fields": {
+            "name": "Armoire",
+            "color": "Noir",
+            "description": "Armoire spacieuse avec miroirs."
+        }
+    },
+    {
+        "model": "application.order",
+        "pk": 1,
+        "fields": {
+            "order_client": 1,
+            "order_product": 2,
+            "date": "2024-02-07",
+            "address": "10 rue des Lilas, Paris"
+        }
+    },
+    {
+        "model": "application.order",
+        "pk": 2,
+        "fields": {
+            "order_client": 2,
+            "order_product": 3,
+            "date": "2024-02-07",
+            "address": "24 avenue de la République, Lyon"
+        }
+    },
+    {
+        "model": "application.order",
+        "pk": 3,
+        "fields": {
+            "order_client": 3,
+            "order_product": 1,
+            "date": "2024-02-07",
+            "address": "3 impasse des Roses, Marseille"
+        }
+    },
+    {
+        "model": "application.order",
+        "pk": 4,
+        "fields": {
+            "order_client": 4,
+            "order_product": 5,
+            "date": "2024-02-07",
+            "address": "5 boulevard Haussmann, Paris"
+        }
+    },
+    {
+        "model": "application.order",
+        "pk": 5,
+        "fields": {
+            "order_client": 5,
+            "order_product": 4,
+            "date": "2024-02-07",
+            "address": "12 rue du Château, Bordeaux"
+        }
+    }
+]
