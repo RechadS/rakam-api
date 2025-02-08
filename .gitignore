@@ -65,3 +65,6 @@ build/
 dist/
 
 docker-compose-dev.yml
+.github/dependabot.yml
+rakam-api.code-workspace
+.devcontainer/devcontainer.json
