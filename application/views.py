@@ -13,11 +13,7 @@ def test_response(request):
     """
     Endpoint that takes a user message as input and returns a response in JSON format.
     """
-    #question = request.query_params.get('question', '')
-    #results = askQuestion(question)
-    # Placeholder response structure
     base_response = {
-        # "text": results,
         "text": "Hey, test test was successful !",
     }
 
@@ -29,14 +25,12 @@ def queryClassification(request):
     Endpoint that takes a user message as input and returns a response in JSON format.
     """
     question = request.query_params.get('question', '')
-    #results = AGENT2.execute_action("classify_request", "What is the color of the chair?")
-
-    #class_name, trigger_query = AGENT2.actions['classify_request'].execute(query="What is the color of the chair?")
+    
     results = AGENT_QUERY_CLASSIFICATION.choose_action(question)
+
     # Placeholder response structure
     base_response = {
         "text": results,
-        #"text": "Hey, test test was successful !",
     }
 
     return Response(base_response, status=200)
